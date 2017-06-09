@@ -1,25 +1,7 @@
 <html>
 <head>
   <title>Cross Storage Hub</title>
-  <script type="text/javascript">
-  // ブラウザ上でファイルを展開する挙動を抑止
-  function onDragOver(event) {
-      event.preventDefault();
-  }
 
-  // Drop領域にドロップしたファイル情報を読み取り
-  function onDrop(event) {
-      // ブラウザ上でファイルを展開する挙動を抑止
-      event.preventDefault();
-
-      // ドロップされたファイルのfilesプロパティを参照
-      var files = event.dataTransfer.files;
-      if (files.length == 1) {
-          alert(files[0].name + ":" + files[0].size);
-          //FileUpload(files[0]);
-      }
-  }
-  </script>
   <script type="text/javascript" src="https://rawgit.com/addyosmani/basket.js/gh-pages/dist/basket.full.min.js"></script>
   <script type="text/javascript" src="lib/hub.js"></script>
 </head>
